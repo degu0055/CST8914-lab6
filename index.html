@@ -1,6 +1,8 @@
-<html class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr">
+<!DOCTYPE html>
+<html class="js backgroundsize borderimage csstransitions fontface svg" dir="ltr" lang="en">
+
 <head>
-	<title>Untitled</title>
+	<title>Hi/Max Real Estate</title>
 	<script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/i18n/en.min.js"></script>
 	<script
 		src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/wet-boew/js/deps/jsonpointer.min.js"></script>
@@ -17,20 +19,71 @@
 	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_1_0/cdts/cdtsapps.css">
 
 	<style>
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			text-align: center;
+			font-family: Arial, sans-serif;
+		}
 
- .social  a svg {
-      width: 30px;
-      fill: #91929a;
-    }
+		th,
+		td {
+			border: 2px solid black;
+			padding: 10px;
+			text-align: center
+		}
+
+		th {
+			background-color: #A0A0A0;
+			color: #000;
+			font-weight: bold;
+		}
+
+		th[colspan] {
+			background-color: #333;
+			color: #fff;
+		}
+
+		td:first-child {
+			background-color: #A0A0A0;
+			color: #000;
+			font-weight: bold;
+		}
+
+		th:first-child {
+			background-color: #A0A0A0;
+			font-weight: bold;
+		}
+
+		th[rowspan="2"] {
+			background-color: #333;
+			color: #FFF;
+			vertical-align: bottom
+		}
+
+		td:nth-child(n+2) {
+			/* Your styles here */
+			text-align: left;
+		}
+
+
+		#row3 {
+			padding: 20px 0;
+		}
+
+		.social a svg {
+			width: 30px;
+			fill: #91929a;
+		}
 	</style>
 </head>
 
 <body>
 
-	</div>
-	<div> <!-- start of header-->
 
-				<div class="app-bar">
+
+	<header>
+		<div class="app-bar">
 			<div class="container">
 				<div class="row">
 					<section class="col-xs-12">
@@ -40,8 +93,9 @@
 				</div>
 			</div>
 		</div>
+	</header>
 
-
+	<nav>
 		<div id="wb-sm" data-ajax-replace="../ajax/cdtsMenu-en.html" data-trgt="mb-pnl"
 			class="wb-menu visible-md visible-lg wb-init wb-data-ajax-replace-inited wb-menu-inited wb-navcurr-inited"
 			typeof="SiteNavigationElement">
@@ -64,38 +118,147 @@
 			</div>
 
 
-		</div> <!-- end of main navigation-->
+		</div>
+	</nav>
 
-	</div> <!-- end of header-->
+	<!-- end of main navigation-->
+
+
+
+
+	<!-- end of header-->
 
 	<main property="mainContentOfPage" class="container">
 		<h1>Welcome</h1>
-		<p>Content A here</p>
+
+		<section id="row1" aria-labelledby="content-A">
+			<h2 id="content-A">Hi/Max Real Estate &amp; Houses </h2>
+			<p>
+				Buying or selling a home is likely the largest and most important transaction you’ll ever make. That’s
+				why so many trust Hi/MAX Real Estate, which according to Canadian consumers, has been voted #1 Most
+				Trusted Real Estate Agents in Canada six times in a row.
+			</p>
+			<a href="https://www.google.ca/" target="_blank">Lets get started</a>
+
+		</section>
+
+
 		<div class="row">
-			<div class="col-md-4 pull-right">
-				<p></p>Content B here
-			</div>
-			<div class="col-md-8">
-				<p>Content C here</p>
+
+			<section id="row2-C" aria-labelledby="content-C">
+				<div class="col-md-8" id="content-C">
+					<h2>Why choosing HI/Max</h2>
+					<p>Hi/Max agents go above and beyond and always strive to be the best they can be. HI/MAX is
+						extremely community focused, and our agents are too!</p>
+
+					<strong>Stats of HI/Max </strong>
+					<table>
+						<tr>
+							<th rowspan="2">Year</th>
+							<th colspan="2">Sold Properties</th>
+							<th colspan="2">Average selling price</th>
+						</tr>
+						<tr>
+							<th>Quebec</th>
+							<th>Ontario</th>
+							<th>Single house</th>
+							<th>Condo</th>
+						</tr>
+						<tr>
+							<td>2021</td>
+							<td>50</td>
+							<td>100</td>
+							<td>$500,00</td>
+							<td>189,000</td>
+						</tr>
+						<tr>
+							<td>2022</td>
+							<td>100</td>
+							<td>200</td>
+							<td>$780,00</td>
+							<td>240,000</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+
+			<aside id="row2-B" aria-labelledby="content-B">
+				<div class="col-md-4" id="content-B">
+					<h3>Related resources </h3>
+					<p>
+						It's time to sell and find the next "one". Let us help you navigate the ins &amp; outs of your
+						next move.
+					</p>
+					<ul>
+						<li>
+							<a href="https://www.google.ca/" target="_blank">Looking for an upgrade? </a>
+						</li>
+						<li>
+							<a href="https://www.google.ca/" target="_blank">Buying tips</a>
+						</li>
+						<li>
+							<a href="https://www.google.ca/" target="_blank">How much is your current home worth?</a>
+						</li>
+					</ul>
 
 
-			</div>
+				</div>
+			</aside>
+
 		</div>
+
+
 		<div class="clear"></div>
-		<div>Content D here</div>
+
+		<section id="row3" aria-labelledby="content-D">
+			<h3 id="content-D">More Resources on How to Choose the Right Agente</h3>
+			<hr>
+		</section>
+
 		<div class="row">
-			<div class="col-md-4 ">
-				<p>Content F here</p>
-			</div>
-			<div class="col-md-4">
-				<p>Content G here</p>
 
-			</div>
-			<div class="col-md-4">
-				<p>Content H here</p>
+			<section class="col-md-4" id="row4-F" aria-labelledby="content-F">
+				<img src="1.png" alt="Red birdhouse hanging from a tree branch with a 'For Sale' sign.">
+				<h3 id="content-F">
+					<a href="https://www.google.ca">What Are The Risks of Selling a Home Yourself?</a>
+				</h3>
+				<p>
+					We’ve all seen the videos, read the stories, and gasped at the images of people who thought they
+					could conquer a project that would have been better left to the professionals.
+				</p>
+				<a href="https://www.google.ca" target="_blank">Read more</a>
+			</section>
 
-			</div>
+			<section class="col-md-4" id="row4-G" aria-labelledby="content-G">
+				<img src="2.png" alt="Smiling real estate agent in a blue blazer talking to a client across a desk.">
+				<h3 id="content-G">
+					<a href="https://www.google.ca">
+						7 Questions to Ask a Real Estate Agent Before You Commit
+					</a>
+				</h3>
+				<p>
+					According to research by the National Association of Realtors, there are considerable benefits to
+					working with a real estate agent, including higher sale prices.
+				</p>
+			</section>
+
+			<section class="col-md-4" id="row4-H" aria-labelledby="content-H">
+				<img src="3.png" alt="A real estate agent is holding a For Sale sign.">
+				<h3 id="content-H">
+					<a href="https://www.google.ca">
+						8 Reasons to Hire an Agent When Selling Your Home
+					</a>
+				</h3>
+				<p>
+					With all the many different moving parts involved in selling your home, here are eight very valid
+					reasons to have a real estate agent on speed dial.
+				</p>
+			</section>
+
+
+
 		</div>
+
 		<div class="pagedetails">
 			<dl id="wb-dtmd">
 				<dt>Date modified: </dt>
@@ -105,30 +268,43 @@
 
 
 	</main>
-	<div id="wb-info" class=" wb-navcurr-inited">
-		<div class="gc-sub-footer">
-			<div class="container d-flex align-items-center">
-				<div>
-					<h3 class="wb-inv" id="aboutWebApp">Hi/Max Real Estate</h3>
-					<ul>
-						<li><a href="#">About the company</a></li>
-						<li><a href="#">Privacy policy</a></li>
-						<li><a href="#">Accessibility statement</a></li>
-						<li style="list-style: none;" class="social">
-						<a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-						  <path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"></path>
-						</svg></a></li>
-						
-					  </ul>	
-				</div>
 
-				<div class="col-xs-6 visible-sm visible-xs tofpg">
-					<a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
-				</div>
+	<footer>
+		<div id="wb-info" class=" wb-navcurr-inited">
+			<div class="gc-sub-footer">
+				<div class="container d-flex align-items-center">
+					<div>
+						<h3 class="wb-inv" id="aboutWebApp">Hi/Max Real Estate</h3>
+						<ul>
+							<li><a href="#">About the company</a></li>
+							<li><a href="#">Privacy policy</a></li>
+							<li><a href="#">Accessibility statement</a></li>
+							<li style="list-style: none;" class="social">
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" role="img"
+										aria-labelledby="twitter-icon">
+										<title id="twitter-icon">Twitter Icon</title>
+										<path
+											d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z">
+										</path>
+									</svg>
+								</a>
+							</li>
 
+						</ul>
+					</div>
+
+					<div class="col-xs-6 visible-sm visible-xs tofpg">
+						<a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+					</div>
+
+				</div>
 			</div>
 		</div>
-	</div> <!-- end of footer-->
+	</footer>
+
+
+	<!-- end of footer-->
 
 	<script>
 		var defFooter = document.getElementById("def-footer");
